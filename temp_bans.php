@@ -7,9 +7,7 @@
 <head>
 
 <?php
-    echo "<title>";
-    echo $GROUP_NAME . " - Temporary CT Bans";
-    echo "</title>";
+    include_once("title.php");
     include_once("styles.php");
 ?>
 
@@ -21,11 +19,9 @@
         include_once('navbar.php');
         include_once('jumbotron.php');
     ?>
-    <div class="ban-container">
-        <?php
-            get_temp_bans();
-        ?>
-    </div>
+    <?php
+        get_temp_bans();
+    ?>
 
 
 </body>

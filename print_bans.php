@@ -2,6 +2,8 @@
 
 function print_bans($result) {
 
+echo "<div class='ban-container'>";
+
 if($result->num_rows > 0) {
 
     echo "<div class='table-responsive'>";
@@ -20,7 +22,8 @@ if($result->num_rows > 0) {
 
     while($row = $result->fetch_assoc()) {
         $epoch = $row["timestamp"];
-        $dt = new DateTime("@$epoch");
+        $dt = new DateTime();
+        $dt->setTimestamp($epoch);
         $timezone = new DateTimeZone('US/Eastern');
         $dt->setTimezone($timezone);
         echo "<tr class='text-center'>";
@@ -53,6 +56,8 @@ if($result->num_rows > 0) {
 } else {
     echo "No results";
 }
+
+echo "</div>";
 
 }
 

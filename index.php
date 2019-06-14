@@ -6,9 +6,7 @@
 <head>
 
 <?php
-    echo "<title>";
-    echo $GROUP_NAME . " - CT Bans";
-    echo "</title>";
+    include_once("title.php");
     include_once("styles.php");
 ?>
 

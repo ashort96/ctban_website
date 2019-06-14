@@ -7,9 +7,7 @@
 <head>
 
 <?php
-    echo "<title>";
-    echo $GROUP_NAME . " - Expired CT Bans";
-    echo "</title>";
+    include_once("title.php");
     include_once("styles.php");
 ?>
 
@@ -21,10 +19,8 @@
         include_once('jumbotron.php');
     ?>
 
-    <div class="ban-container">
-        <?php
-            get_expired_bans();
-        ?>
-    </div>
+    <?php
+        get_expired_bans();
+    ?>
 </body>
 </html>

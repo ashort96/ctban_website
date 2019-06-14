@@ -21,12 +21,10 @@
         include_once('navbar.php');
         include_once('jumbotron.php');
     ?>
-
-    <div class="ban-container">
-        <?php
-            get_perm_bans();
-        ?>
-    </div>
+    
+    <?php
+        get_perm_bans();
+    ?>
 
 
 </body>
