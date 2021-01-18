@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif !important;
+    height: 100vh !important;
 }
 
 .ban-container {
@@ -14,4 +15,25 @@ body {
 
 .ban-table-columm-last {
     width: 14.290%;
+}
+
+.navbar
+{
+    border-bottom: 5px solid #202020;
+}
+
+tbody {
+    overflow: auto;
+}
+
+.btn-gp {
+    color: #fff;
+    background-color: #8A2BE2;
+    border-color: #8A2BE2;
+}
+
+.btn-gp:hover {
+    color: #fff;
+    background-color: #8A19BC;
+    border-color: #8A12AF;
 }
