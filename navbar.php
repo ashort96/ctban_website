@@ -1,11 +1,10 @@
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-
 <!-- Links -->
 <ul class="navbar-nav">
     <li class="nav-item">
         <?php
-            if($_SERVER["REQUEST_URI"] == "/ctbans/" || $_SERVER["REQUEST_URI"] == "/ctbans/index.php") {
+            if(basename($_SERVER['REQUEST_URI'], '?' . $_SERVER['QUERY_STRING']) == "ctbans" || basename($_SERVER['REQUEST_URI'], '?' . $_SERVER['QUERY_STRING']) == "" || basename($_SERVER['REQUEST_URI'], '?' . $_SERVER['QUERY_STRING']) == "index.php") {
                 echo "<a class='nav-link active' href='.'>Home</a>";
             }
             else {
@@ -15,7 +14,7 @@
     </li>
     <li class="nav-item">
         <?php
-            if($_SERVER["REQUEST_URI"] == "/ctbans/temp_bans.php") {
+            if(basename($_SERVER['REQUEST_URI'], '?' . $_SERVER['QUERY_STRING']) == "temp_bans.php") {
                 echo "<a class='nav-link active' href='temp_bans.php'>Temporary Bans</a>";
             }
             else {
@@ -25,8 +24,8 @@
     </li>
     <li class="nav-item">
         <?php
-            if($_SERVER["REQUEST_URI"] == "/ctbans/perm_bans.php") {
-                echo "<a class='nav-link active' href='/perm_bans.php'>Permanent Bans</a>";
+            if(basename($_SERVER['REQUEST_URI'], '?' . $_SERVER['QUERY_STRING']) == "perm_bans.php") {
+                echo "<a class='nav-link active' href='perm_bans.php'>Permanent Bans</a>";
             }
             else {
                 echo "<a class='nav-link' href='perm_bans.php'>Permanent Bans</a>";                
@@ -35,7 +34,7 @@
     </li>
     <li class="nav-item">
         <?php
-            if($_SERVER["REQUEST_URI"] == "/ctbans/expired_bans.php") {
+            if(basename($_SERVER['REQUEST_URI'], '?' . $_SERVER['QUERY_STRING']) == "expired_bans.php") {
                 echo "<a class='nav-link active' href='expired_bans.php'>Expired Bans</a>";
             }
             else {

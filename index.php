@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body class="bg-dark">
 
     <?php
         include_once('navbar.php');
@@ -20,12 +20,12 @@
     ?>
 
     <div class="container">
-        <form action="get_ban.php" method="post">
+        <form action="get_ban.php" method="get">
             <div class="form-group">
                 <input type="text" class="form-control" id="steamid" name="steamid" aria-describedby="" placeholder="Enter SteamID">
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-primary">Search</button>
+                <button type="submit" class="btn btn-gp">Search</button>
             </div>
         </form>
     </div>

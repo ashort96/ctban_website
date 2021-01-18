@@ -2,12 +2,11 @@
 
 function print_bans($result) {
 
-echo "<div class='ban-container'>";
+// echo "<div class='ban-container'>";
 
 if($result->num_rows > 0) {
-
     echo "<div class='table-responsive'>";
-    echo "<table class='table table-striped'>";
+    echo "<table class='table table-striped table-dark'>";
     echo "<thead class='text-center'>";
     echo "<tr>";
     echo "<th class='ban-table-column'>SteamID:</th>";
@@ -57,7 +56,7 @@ if($result->num_rows > 0) {
     echo "No results";
 }
 
-echo "</div>";
+// echo "</div>";
 
 }
 
